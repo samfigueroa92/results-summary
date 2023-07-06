@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Container">
+        <div className="left-side">
+          <div className="left-side_header">Your Result</div>
+          <div className="left-side_score">76 of 100</div>
+          <div className="left-side_sub-header">Great</div>
+          <div className="left-side_text">You scored higher than 65% of the people who have taken these tests.</div>
+        </div>
+        <div className="right-side">
+          <div>Summary</div>
+          <div>
+            Reaction
+          </div>
+          <div>
+            Memory
+          </div>
+          <div>
+            Verbal
+          </div>
+          <div>
+            Visual
+          </div>
+          <input type='submit' value='Continue'/>
+        </div>
+      </div>
     </div>
   );
 }
