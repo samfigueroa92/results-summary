@@ -1,25 +1,121 @@
+.App{
+  /* displays div in center of screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
 .Container{
-  border: 1px solid black;
-  width: 50%;
-  height:400px;
+  /* border: 2px solid black; */
+  width: 80vw;
   margin: 0 auto;
   display: flex;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px hsl(241, 100%, 89%);
 }
 
 .left-side{
-  border: 1px solid red;
+  /* border: 1.5px solid red; */
+  width: 50%;
+  min-height: 50vh;
   border-radius: 25px;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
+.left-side_header{
+  margin: 25px;
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  font-weight: 500;
+}
 .left-side_score{
-  border: 1px solid black;
+  /* border: 1.5px solid black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 145px;
+  padding: 10px;
+  margin: 25px;
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  margin: 0 auto;
+}
+.left-side_score span{
+  font-size: 12px;
+  color: hsl(241, 100%, 89%);
+}
+.left-side_sub-header{
+  margin: 25px;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+.left-side_text{
+  margin: 25px;
+  color: hsl(241, 100%, 89%);
+  
 }
 
 .right-side{
-  border: 1px solid green;
+  /* border: 1.5px solid green; */
+  width: 50%;
+  min-height: 50vh;
+}
+.right-side_header{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 25px;
+  color: hsl(224, 30%, 27%);
   
+}
+.right-side_banner{
+  border: 1px solid pink;
+  width: 70%;
+  margin: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.reaction{
+  color: hsl(0, 100%, 67%);
+
+}
+.memory{
+  color: hsl(39, 100%, 56%);
+
+}
+.verbal{
+  color: hsl(166, 100%, 37%);
+
+}
+.visual{
+  color: hsl(234, 85%, 45%);
+
+}
+.reaction
+.memory 
+.verbal
+.visual, span{
+  color: hsl(224, 30%, 27%);
+}
+
+.button{
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: bold;
+  width: 70%;
+  border: none;
 }
